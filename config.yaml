@@ -3,7 +3,7 @@
     "defaults": {
       "workspace": "~/.picoclaw/workspace",
       "restrict_to_workspace": true,
-      "model": "stepfun/step-3.5-flash:free",
+      "model": "stepfun/step-3.5-flash",
       "max_tokens": 2048,
       "temperature": 0.2,
       "max_tool_iterations": 5,
