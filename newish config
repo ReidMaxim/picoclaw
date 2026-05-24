@@ -1,0 +1,116 @@
+{
+  "version": 3,
+
+  "agents": {
+    "defaults": {
+      "workspace": "/home/gamer/.picoclaw/workspace",
+      "restrict_to_workspace": false,
+      "model_name": "openrouter",
+      "max_tokens": 8192,
+      "context_window": 131072,
+      "temperature": 0.7,
+      "max_tool_iterations": 20,
+      "summarize_message_threshold": 20,
+      "summarize_token_percent": 75,
+      "split_on_marker": false,
+      "max_llm_retries": 2,
+      "llm_retry_backoff_secs": 2,
+
+      "tool_feedback": {
+        "enabled": false,
+        "max_args_length": 300,
+        "separate_messages": false
+      }
+    }
+  },
+
+  "evolution": {
+    "enabled": false,
+    "mode": "observe",
+    "state_dir": "",
+    "min_task_count": 2,
+    "min_success_ratio": 0.7,
+    "cold_path_trigger": "after_turn",
+    "cold_path_times": []
+  },
+
+  "model_list": [
+    {
+      "model_name": "openrouter",
+      "provider": "openai",
+      "model": "openrouter/free",
+      "api_base": "https://openrouter.ai/api/v1"
+    },
+
+    {
+      "model_name": "lmstudio-local",
+      "provider": "openai",
+      "model": "openai/gpt-oss-20b",
+      "api_base": "http://localhost:1234/v1"
+    }
+  ],
+
+  "channel_list": {
+    "telegram": {
+      "enabled": false
+    },
+
+    "discord": {
+      "enabled": false
+    },
+
+    "qq": {
+      "enabled": false
+    },
+
+
+    "whatsapp": {
+      "enabled": false
+    },
+
+    "feishu": {
+      "enabled": false
+    },
+
+    "dingtalk": {
+      "enabled": false
+    },
+
+    "slack": {
+      "enabled": false
+    },
+
+    "matrix": {
+      "enabled": false
+    },
+
+    "line": {
+      "enabled": false
+    },
+
+    "onebot": {
+      "enabled": false
+    },
+
+    "wecom": {
+      "enabled": false
+    },
+
+    "pico": {
+      "enabled": false
+    },
+
+    "pico_client": {
+      "enabled": false
+    },
+
+    "irc": {
+      "enabled": false
+    }
+  },
+
+  "gateway": {
+    "host": "0.0.0.0",
+    "port": 18790
+  }
+}
